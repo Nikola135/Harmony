@@ -1,0 +1,56 @@
+Initialize engine version: 5.5.1xf1Linux (f5287bef00ff)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 10.0]
+    Renderer: AMD Radeon HD 6600 Series (ID=0x6758)
+    Vendor:   ATI
+    VRAM:     1024 MB
+    Driver:   1.0
+d3d11: failed to create 2D texture id=27 width=1024 height=1 mips=1 dxgifmt=56 [D3D error was 8876086c]
+
+ 
+(Filename:  Line: 501)
+
+Crash!!!
+SymInit: Symbol-SearchPath: '.;Z:\home\nikola\Documents\Projekti\Harmony\Harmony;Z:\home\nikola\Documents\Projekti\Harmony\Harmony;C:\windows;C:\windows\system32;SRV*c:\websymbols*http://msdl.microsoft.com/download/symbols;', symOptions: 530, UserName: 'nikola'
+OS-Version: 5.2.3790 (Service Pack 2) 0x0-0x1
+Z:\home\nikola\Documents\Projekti\Harmony\Harmony\Harmony.exe:Harmony.exe (00400000), size: 19075072 (result: 0), SymType: '-nosymbols-', PDB: 'Z:\home\nikola\Documents\Projekti\Harmony\Harmony\Harmony.exe', fileVersion: 5.5.1.10363
+C:\windows\system32\ntdll.dll:ntdll.dll (7BC10000), size: 929792 (result: 0), SymType: 'DIA', PDB: 'C:\windows\system32\ntdll.dll', fileVersion: 5.1.2600.2180
+C:\windows\system32\KERNEL32.dll:KERNEL32.dll (7B810000), size: 2465792 (result: 0), SymType: 'DIA', PDB: 'C:\windows\system32\KERNEL32.dll', fileVersion: 5.1.2600.2180
+C:\windows\system32\hid.dll:hid.dll (7EFF0000), size: 65536 (result: 0), SymType: 'DIA', PDB: 'C:\windows\system32\hid.dll', fileVersion: 10.0.0.0
+C:\windows\system32\user32.dll:user32.dll (7E930000), size: 1339392 (result: 0), SymType: 'DIA', PDB: 'C:\windows\system32\user32.dll', fileVersion: 5.1.2600.2180
+C:\windows\system32\gdi32.dll:gdi32.dll (7E810000), size: 1093632 (result: 0), SymType: 'DIA', PDB: 'C:\windows\system32\gdi32.dll', fileVersion: 10.0.0.0
+C:\windows\system32\advapi32.dll:advapi32.dll (7E790000), size: 434176 (result: 0), SymType: 'DIA', PDB: 'C:\windows\system32\advapi32.dll', fileVersion: 5.1.2600.2180
+C:\windows\system32\version.dll:version.dll (7EFD0000), size: 102400 (result: 0), SymType: 'DIA', PDB: 'C:\windows\system32\version.dll', fileVersion: 5.1.2600.2180
+C:\windows\system32\ole32.dll:ole32.dll (7E650000), size: 1236992 (result: 0), SymType: 'DIA', PDB: 'C:\windows\system32\ole32.dll', fileVersion: 10.0.0.0
+C:\windows\system32\rpcrt4.dll:rpcrt4.dll (7E5C0000), size: 495616 (result: 0), SymType: 'DIA', PDB: 'C:\windows\system32\rpcrt4.dll', fileVersion: 5.1.2600.2180
+C:\windows\system32\shlwapi.dll:shlwapi.dll (7E550000), size: 409600 (result: 0), SymType: 'DIA', PDB: 'C:\windows\system32\shlwapi.dll', fileVersion: 6.0.2800.1692
+C:\windows\system32\shell32.dll:shell32.dll (7E300000), size: 2330624 (result: 0), SymType: 'DIA', PDB: 'C:\windows\system32\shell32.dll', fileVersion: 6.0.2900.6242
+C:\windows\system32\opengl32.dll:opengl32.dll (7A820000), size: 1044480 (result: 0), SymType: 'DIA', PDB: 'C:\windows\system32\opengl32.dll', fileVersion: 5.1.2600.2082
+C:\windows\system32\winmm.dll:winmm.dll (7E240000), size: 700416 (result: 0), SymType: 'DIA', PDB: 'C:\windows\system32\winmm.dll'
+C:\windows\system32\msacm32.dll:msacm32.dll (7E210000), size: 135168 (result: 0), SymType: 'DIA', PDB: 'C:\windows\system32\msacm32.dll'
+C:\windows\system32\ws2_32.dll:ws2_32.dll (7E1D0000), size: 221184 (result: 0), SymType: 'DIA', PDB: 'C:\windows\system32\ws2_32.dll', fileVersion: 5.1.2600.5512
+C:\windows\system32\oleaut32.dll:oleaut32.dll (7E0A0000), size: 1220608 (result: 0), SymType: 'DIA', PDB: 'C:\windows\system32\oleaut32.dll', fileVersion: 6.0.6001.18000
+C:\windows\system32\imm32.dll:imm32.dll (7E070000), size: 81920 (result: 0), SymType: 'DIA', PDB: 'C:\windows\system32\imm32.dll', fileVersion: 5.1.2600.2180
+C:\windows\system32\dnsapi.dll:dnsapi.dll (7E050000), size: 61440 (result: 0), SymType: 'DIA', PDB: 'C:\windows\system32\dnsapi.dll', fileVersion: 5.2.3790.4318
+C:\windows\system32\netapi32.dll:netapi32.dll (7DFD0000), size: 155648 (result: 0), SymType: 'DIA', PDB: 'C:\windows\system32\netapi32.dll'
+C:\windows\system32\iphlpapi.dll:iphlpapi.dll (7DFA0000), size: 155648 (result: 0), SymType: 'DIA', PDB: 'C:\windows\system32\iphlpapi.dll', fileVersion: 5.1.2600.2180
+C:\windows\system32\winhttp.dll:winhttp.dll (7DF60000), size: 249856 (result: 0), SymType: 'DIA', PDB: 'C:\windows\system32\winhttp.dll', fileVersion: 5.1.2600.2180
+C:\windows\system32\jsproxy.dll:jsproxy.dll (7E030000), size: 61440 (result: 0), SymType: 'DIA', PDB: 'C:\windows\system32\jsproxy.dll'
+C:\windows\system32\api-ms-win-core-winrt-l1-1-0.dll:api-ms-win-core-winrt-l1-1-0.dll (F75B0000), size: 65536 (result: 87), SymType: '-unknown-', PDB: ''
+C:\windows\system32\combase.dll:combase.dll (F73B0000), size: 65536 (result: 87), SymType: '-unknown-', PDB: ''
+C:\windows\system32\api-ms-win-core-winrt-string-l1-1-0.dll:api-ms-win-core-winrt-string-l1-1-0.dll (F7390000), size: 69632 (result: 87), SymType: '-unknown-', PDB: ''
+C:\windows\system32\winex11.drv:winex11.drv (F7300000), size: 577536 (result: 87), SymType: '-unknown-', PDB: '', fileVersion: 10.0.0.0
+Z:\home\nikola\Documents\Projekti\Harmony\Harmony\Harmony_Data\Mono\mono.dll:mono.dll (10000000), size: 2297856 (result: 0), SymType: '-nosymbols-', PDB: 'Z:\home\nikola\Documents\Projekti\Harmony\Harmony\Harmony_Data\Mono\mono.dll', fileVersion: 1.0.0.1
+C:\windows\system32\psapi.dll:psapi.dll (F70F0000), size: 32768 (result: 87), SymType: '-unknown-', PDB: '', fileVersion: 5.1.2600.3264
+C:\windows\system32\mswsock.dll:mswsock.dll (F70D0000), size: 81920 (result: 87), SymType: '-unknown-', PDB: '', fileVersion: 4.0.0.0
+C:\windows\system32\d3d11.dll:d3d11.dll (F7080000), size: 323584 (result: 87), SymType: '-unknown-', PDB: '', fileVersion: 7.0.6002.18107
+C:\windows\system32\dxgi.dll:dxgi.dll (F7050000), size: 151552 (result: 87), SymType: '-unknown-', PDB: '', fileVersion: 6.0.6000.16386
+C:\windows\system32\wined3d.dll:wined3d.dll (F6F10000), size: 1298432 (result: 87), SymType: '-unknown-', PDB: '', fileVersion: 10.0.0.0
+C:\windows\system32\wbemprox.dll:wbemprox.dll (F37B0000), size: 192512 (result: 87), SymType: '-unknown-', PDB: ''
+C:\windows\system32\winspool.drv:winspool.drv (F3770000), size: 221184 (result: 87), SymType: '-unknown-', PDB: '', fileVersion: 5.1.2600.2180
+C:\windows\system32\dbghelp.dll:dbghelp.dll (F2F10000), size: 389120 (result: 87), SymType: '-unknown-', PDB: '', fileVersion: 6.1.7601.17514
+C:\windows\system32\msvcrt.dll:msvcrt.dll (F14F0000), size: 655360 (result: 87), SymType: '-unknown-', PDB: '', fileVersion: 7.0.2600.2180
+
+========== OUTPUTING STACK TRACE ==================
+
