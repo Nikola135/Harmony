@@ -22,6 +22,7 @@ public class LVLUP : MonoBehaviour {
 			Debug.Log ("Collision!");
 		{*/
 		print ("LVLUP!!!");
+		FollowBall.PauseTrue = true;
 		FollowBall.c = 1000;
 		FollowBall.Forward = KeyCode.Y;
 		FollowBall.Back = KeyCode.Y;
