@@ -291,7 +291,7 @@ public class FollowBall : MonoBehaviour {
 	public void UpdateTimerUI(){
 
 		//Set timer UI
-		if (PauseTrue == false) {
+		if (!PauseTrue && !FinishTrue) {
 			secondsCount += Time.deltaTime;
 			decisecCount = (int)(secondsCount * 10) - (int)secondsCount * 10;
 			centisecCount = (int)(secondsCount * 100) - (int)secondsCount * 100 - decisecCount * 10;

@@ -23,7 +23,7 @@ public class BallMove : MonoBehaviour {
 	void Update () {
 
 		//If we can control the Ball
-		if (!FollowBall.PauseTrue || !FollowBall.FinishTrue) {
+		if (!FollowBall.PauseTrue && !FollowBall.FinishTrue) {
 
 			//Changing Ball properties by pressing X
 			//TODO Ovo možda neće biti implementirano u finalnoj verziji.
