@@ -10,7 +10,7 @@ public class FollowBall : MonoBehaviour {
 	public GameObject ball;
 
 	//Camera Position to be calculated
-	float ballx, bally, ballz;
+	float ballx, bally, ballz, cameraRX;
 
 	//Used for changing camera view and controls change based on camera view.
 	public static int c; //c ima vrednosti 0,1,2,3 gde je 0 podrazumevna opcija, 1 okreneš se 
@@ -82,6 +82,9 @@ public class FollowBall : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+
+		cameraRX = 35f;
+
 		//Initializing timers
 		milisecCount = 0;
 		centisecCount = 0;
@@ -91,7 +94,7 @@ public class FollowBall : MonoBehaviour {
 		hourCount = 0;
 
 		//Initializing Bools
-		PauseTrue = false;
+		PauseTrue = true;
 		FinishTrue = false;
 
 		//Adding Listeners for Buttons
@@ -178,7 +181,7 @@ public class FollowBall : MonoBehaviour {
 
 		//Updates Camera position Above the Ball
 		ballx = ball.transform.position.x;
-		bally = ball.transform.position.y + (float)3.6;
+		bally = ball.transform.position.y + 3.3f;//(float)3.6;
 		ballz = ball.transform.position.z;
 
 		//Changes Camera view if C or V pressed
@@ -209,7 +212,7 @@ public class FollowBall : MonoBehaviour {
 			ARight = KeyCode.RightArrow;
 
 			//Changes Camera Rotation based on camera view
-			rotation = Quaternion.Euler (40,0,0);
+			rotation = Quaternion.Euler (cameraRX,0,0);
 
 			//Moves Camera acordingly
 			transform.rotation =  Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * rotationSpeed);
@@ -227,7 +230,7 @@ public class FollowBall : MonoBehaviour {
 			ALeft = KeyCode.DownArrow;
 			ARight = KeyCode.UpArrow;
 
-			rotation = Quaternion.Euler (40,90,0);
+			rotation = Quaternion.Euler (cameraRX,90,0);
 
 			transform.rotation =  Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * rotationSpeed);
 			break;
@@ -243,7 +246,7 @@ public class FollowBall : MonoBehaviour {
 			ALeft = KeyCode.RightArrow;
 			ARight = KeyCode.LeftArrow;
 
-			rotation = Quaternion.Euler (40,180,0);
+			rotation = Quaternion.Euler (cameraRX,180,0);
 
 			transform.rotation =  Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * rotationSpeed);
 			break;
@@ -259,7 +262,7 @@ public class FollowBall : MonoBehaviour {
 			ALeft = KeyCode.UpArrow;
 			ARight = KeyCode.DownArrow;
 
-			rotation = Quaternion.Euler (40,270,0);
+			rotation = Quaternion.Euler (cameraRX,270,0);
 
 			transform.rotation =  Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * rotationSpeed);
 			break;
@@ -278,7 +281,7 @@ public class FollowBall : MonoBehaviour {
 			//TODO Add Lose game view
 			ballx = ballx + (float)5.0;
 			//print ("This is unexpected XD");
-			rotation = Quaternion.Euler (40,270,0);
+			rotation = Quaternion.Euler (cameraRX,270,0);
 			transform.rotation =  Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * rotationSpeed);
 			break;
 		

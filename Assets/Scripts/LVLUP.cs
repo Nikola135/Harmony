@@ -20,8 +20,9 @@ public class LVLUP : MonoBehaviour {
 	{
 
 		print ("LVLUP!!!");
+		BallMove.s = 3;
 		FollowBall.FinishTrue = true;
-		FollowBall.c = 1000;
+
 	}
 }
 /*Garbege:

@@ -7,6 +7,10 @@ public class BallMove : MonoBehaviour {
 	//Is actualy the force, and speed is depending on mass/force relation.
 	public int speed;
 
+	public Material[] materials = new Material[3];
+
+	public Renderer rend;
+
 	public static Rigidbody rb;
 
 	public static int s; //govori o stanju, stanje 0 je papir 100/0.25, stanje 1 je drvo 700/2, stanje 2 je kamen 2100/12
@@ -14,6 +18,9 @@ public class BallMove : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		speed = 700;//1400 700 350 175/200 100   2100 1400 700  350  100
+		rend = GetComponent<Renderer>();
+		//materials = new Material[3];
+
 		rb = GetComponent<Rigidbody> ();
 		rb.mass = (float)2;//8 2 1 0,5 0.25      12   8    2    1    0,25
 		s = 1;
@@ -22,6 +29,10 @@ public class BallMove : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+		//Testing g
+		//rb.AddForce (Vector3.down * 500 * Time.deltaTime);
+
+		if(FollowBall.FinishTrue) rb.isKinematic = true;
 		//If we can control the Ball
 		if (!FollowBall.PauseTrue && !FollowBall.FinishTrue) {
 
@@ -35,26 +46,37 @@ public class BallMove : MonoBehaviour {
 			//Changing Ball properties
 			switch (s) {
 			case 0:
+				rend.sharedMaterial = materials [0];
 				speed = 125;
 				rb.mass = (float)0.25;
 				break;
 			case 1:
+				rend.sharedMaterial = materials [1];
 				speed = 700;
+				rb.AddForce (Vector3.down * 400 * Time.deltaTime);
 				rb.mass = (float)2;
 
 				break;
 			case 2:
+				rend.sharedMaterial = materials [2];
 				speed = 2700;
+				rb.AddForce (Vector3.down * 1000 * Time.deltaTime);
 				rb.mass = (float)12;
 				break;
 			case 3:
+				print ("Imobile now.");
+				rb.isKinematic = true;
+				break;
 			default:
 				print ("This is unexpected XD");
 				break;
 			}
 
+
+
 			if (Input.GetKey (FollowBall.ALeft) || Input.GetKey (FollowBall.Left))
 				rb.AddForce (Vector3.left * speed * Time.deltaTime);
+
 
 			if (Input.GetKey (FollowBall.ARight) || Input.GetKey (FollowBall.Right))
 				rb.AddForce (-Vector3.left * speed * Time.deltaTime);
