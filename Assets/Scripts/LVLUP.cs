@@ -21,6 +21,7 @@ public class LVLUP : MonoBehaviour {
 
 		print ("LVLUP!!!");
 		BallMove.s = 3;
+		FollowBall.c = 5;
 		FollowBall.FinishTrue = true;
 
 	}

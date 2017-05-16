@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 
 public class FollowBall : MonoBehaviour {
 
@@ -122,6 +122,8 @@ public class FollowBall : MonoBehaviour {
 	//TODO Will be shown in Main Manu and on Level finish, Will Load Next Level
 	void NextLVLTaskOnClick(){
 		print ("NextLVL...");
+		print ("menjam scenu?");
+		SceneManager.LoadScene ("5", LoadSceneMode.Single);
 	}
 
 	//Will be shown in Pause Manu, and Resumes game.
@@ -271,6 +273,16 @@ public class FollowBall : MonoBehaviour {
 			break;
 		case 5:
 			//TODO GAME FINISH
+			CFinish.enabled = true;
+
+
+
+			c = 6;
+			break;
+		case 6:
+			ballx = ballx + (float)5.0;
+			rotation = Quaternion.Euler (cameraRX,270,0);
+			transform.rotation =  Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * rotationSpeed);
 			break;
 		case -1:
 			//
